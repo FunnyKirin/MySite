@@ -1,0 +1,7 @@
+.hr{
+    border: none;
+    height: 1px;
+    color: #adadad; /* old IE */
+    background-color: #d8d8d8; /* Modern Browsers */
+
+}
