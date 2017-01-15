@@ -35,3 +35,7 @@
     border-width: 15px;
     border-color: Black;
 }
+
+#languageButton{
+    left: 60px;
+}
