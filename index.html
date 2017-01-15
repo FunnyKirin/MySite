@@ -6,34 +6,38 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="./css/w3.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./jquery-1.12.4.min.js"></script>
+    <script src="./Script.js"></script>
+</head>
 
-<body data-gr-c-s-loaded="true">
+<body data-gr-c-s-loaded="true" onscroll="scroll()">
     <!-- Navbar -->
+    <nav class="w3-sidenav reset navbar w3-black w3-round-large navFont"> <a id="n1" class="navItem w3-padding-24 navActive" href="#Profile">Profile</a> <a id="n2" class="navItem w3-padding-24" href="#Education">Education</a> <a id="n3" class="navItem w3-padding-24" href="#Experiences">Experiences</a> <a id="n4" class="navItem w3-padding-24" href="#Abilities">Abilities</a><a id="n5" class="navItem w3-padding-24" href="#Projects">Projects</a></nav>
     <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
         <!-- The Band Section -->
-        <div class=" w3-white w3-padding-bottom">
+        <div class=" w3-white w3-padding-bottom" id="Profile">
             <div class="w3-content" style="width:55%">
                 <div class="w3-container">
                     <h2 class="w3-center w3-jumbo w3-text-teal">Profile</h2>
-                    <p class="w3-text-grey w3-xlarge w3-center">I'm software engineer you are looking for.</p>
+                    <h3 class="w3-text-grey w3-xlarge w3-center">I'm software engineer you are looking for.</h3>
                     <hr class="hr">
                     <div class="">
                         <div class="w3-third w3-container">
                             <div class="w3-margin-right">
-                                <h3>About me</h3>
-                                <p> I am an allround web developer. I am a senior programmer with good knowledge of front-end techniques. </p>
+                                <h2 class="w3-text-teal">About me</h2>
+                                <p class="w3-text-grey"> I am an software engineer with good knowledge of software development, front-end and back-end techniques. I am also a game developer with experience of several game projects.</p>
                             </div>
-                        </div> <img class="w3-container w3-third w3-center w3-padding-bottom" src="./images/face2.gif">
+                        </div> <img class="ImageBorder w3-container w3-third w3-center w3-padding-bottom" src="./images/face2.gif">
                         <div class="w3-third w3-right w3-container">
                             <div class="w3-margin-left">
-                                <h3>Details</h3>
-                                <p> <strong>Name:</strong>
+                                <h2 class="w3-text-teal">Details</h2>
+                                <p class="w3-text-grey"> <strong class="w3-text-black">Name:</strong>
                                     <br> Zhengyang Liu
-                                    <br> <strong>Age:</strong>
+                                    <br> <strong class="w3-text-black">Age:</strong>
                                     <br> 22 years
-                                    <br> <strong data-brackets-id="29">Location:</strong>
+                                    <br> <strong class="w3-text-black">Location:</strong>
                                     <br> United States </p>
                             </div>
                         </div>
@@ -41,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="w3-sand w3-padding-bottom">
+        <div class="w3-sand w3-padding-bottom" id="Education">
             <div class="w3-content" style="width:55%">
                 <div class="w3-container">
                     <h2 class="w3-center w3-jumbo w3-text-teal">Education</h2>
@@ -75,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="w3-white w3-padding-bottom">
+        <div class="w3-white w3-padding-bottom" id="Experiences">
             <div class="w3-content" style="width:55%">
                 <div class="w3-container">
                     <h2 class="w3-center w3-jumbo w3-text-teal">Experiences</h2>
@@ -85,7 +89,7 @@
                         <div class="w3-third">
                             <div class="w3-container">
                                 <h5 class="w3-opacity"><b>Research Developer</b></h5>
-                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2015 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
                                 <br> </div>
                         </div>
                         <div class="w3-twothird ">
@@ -106,10 +110,10 @@
                 </div>
             </div>
         </div>
-        <div class="w3-sand w3-padding-bottom">
+        <div class="w3-sand w3-padding-bottom" id="Abilities">
             <div class="w3-content" style="width:55%">
                 <div class="w3-container">
-                    <h2 class="w3-center w3-jumbo w3-text-teal">Technical Summary</h2>
+                    <h2 class="w3-center w3-jumbo w3-text-teal">Abilities</h2>
                     <hr class="hr">
                     <div class="w3-container w3-padding-bottom">
                         <h2 class="w3-text-teal">Skills</h2>
@@ -121,7 +125,7 @@
                                 <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
                             </div>
                             <div class="w3-padding-small"> <span class="w3-pfont">C++</span>
-                                <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
+                                <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
                             </div>
                             <div class="w3-padding-small"> <span class="w3-pfont">C</span>
                                 <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
@@ -160,20 +164,121 @@
                             <div class="w3-padding-small"> <span class="w3-pfont">Firebase</span>
                                 <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
                             </div>
-                            <div class="w3-padding-small"> <span class="w3-pfont">Git</span>
-                                <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span></div>
-                            </div>
                         </div>
                         <div class="w3-container w3-half w3-padding-bottom">
-                            <div class="w3-padding-small"> <span class="w3-pfont">NetBean</span>
-                                <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
-                            </div>
                             <div class="w3-padding-small"> <span class="w3-pfont">Visual Studio</span>
                                 <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
                             </div>
-                            <div class="w3-padding-small"> <span class="w3-pfont">Linux OS</span>
-                                <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
+                            <div class="w3-padding-small"> <span class="w3-pfont">NetBean</span>
+                                <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
                             </div>
+                            <div class="w3-padding-small"> <span class="w3-pfont">Linux OS</span>
+                                <div class="w3-right"><span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span> <span class="fa fa-star-o w3-text-teal"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-white w3-padding-bottom" id="Projects">
+            <div class="w3-content" style="width:55%">
+                <div class="w3-container">
+                    <h2 class="w3-center w3-jumbo w3-text-teal">Projects</h2>
+                    <hr class="hr">
+                    <br>
+                    <div class="w3-container w3-card-2 w3-margin-bottom w3-padding">
+                        <h5 class="w3-opacity w3-margin-left"><b>Timberwolf Life</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-left"></i>Aug 2016 - Dec 2016</h6>
+                        <div class="w3-third">
+                            <div class="w3-container">
+                                <div class="w3-btn w3-display-container w3-white w3-border" style="width:100%; padding:0px 0px" onclick="window.open('https://timberwolf-life.firebaseapp.com/')"> <img src="images/TW.png" class="w3-hover-opacity" alt="Timberwolf Life" style="width:100%">
+                                    <div class=" w3-display-topright">
+                                        <div class="fa fa-external-link w3-teal w3-padding-small" style="font-size:30px; color:white"></div>
+                                    </div>
+                                </div>
+                                <br> </div>
+                        </div>
+                        <div class="w3-twothird">
+                            <ul class="">
+                                <li>A multiplayer turn-based strategy web game.</li>
+                                <li>Back end uses Firebase, especially its dynamic database. Implemented user registration and profile storage.</li>
+                                <li>Front end is made by JavaScript, CSS, HTML, JQuery. UI has optimization for phone users.</li>
+                                <li>Participated as lead programmer and project manager.</li>
+                            </ul>
+                            <div class="w3-margin-left w3-btn fa fa-github w3-xxlarge w3-teal" onclick="window.open('https://github.com/FunnyKirin/Timberwolf-Life')"></div>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-card-2 w3-margin-bottom w3-padding">
+                        <h5 class="w3-opacity w3-margin-left"><b>Virtual Laboratory Training Games</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-left"></i>Aug 2016 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+                        <div>
+                            <ul>
+                                <li>A series of web games for helping students be familiar with lab procedure and equipment.</li>
+                                <li>Participated as lead programmer and game designer.</li>
+                                <li>This research <span class="w3-text-teal"><a target="_blank" href="http://www.stonybrook.edu/happenings/facultystaff/suny-iitg-funding-virtual-lab/"><div class="w3-large fa fa-external-link" style="font-size:30px; color:teal"></div>won SUNY funding</a></span>!</li>
+                                <li>First game’s front end uses JavaScript, CSS, HTML, JQuery.
+                                    <br>Second game’s front end is made by WebGL and Unity Engine.</li>
+                                <li>Our back end is a Linux server with PHP code that will produce JSON files to keep students’ record. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-card-2 w3-margin-bottom w3-padding">
+                        <h5 class="w3-opacity w3-margin-left"><b>Victory Trails</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-left"></i>Aug 2015 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+                        <div class="w3-left">
+                            <div class="w3-container">
+                                <div class="w3-btn w3-display-container w3-white w3-border" style="width:110%; padding:0px 0px" onclick="window.open('https://www.youtube.com/watch?v=FXpZ2cv-2Bg&feature=youtu.be/')"> <img src="images/VictoryTrailsLogo.png" class="w3-hover-opacity" alt="Timberwolf Life" style="width:100%">
+                                    <div class=" w3-display-topright">
+                                        <div class="fa fa-youtube-play w3-teal w3-padding-small" style="font-size:30px; color:white"></div>
+                                    </div>
+                                </div>
+                                <br> </div>
+                        </div>
+                        <div class="w3-threequarter">
+                            <ul>
+                                <li>A game designed for clinically obese patients. funded by Stony Brook University. Collaborated with Biomedical Engineering Department and University Hospital.</li>
+                                <li>A motion sensing game, using Kinect sensor in Unity engine and coded with C#.</li>
+                                <li>A RPG game with story line while having exercise requirements.</li>
+                                <li>I joined this project from the very beginning as lead programmer and game designer.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-card-2 w3-margin-bottom w3-padding">
+                        <h5 class="w3-opacity w3-margin-left"><b>Netrade</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-left"></i>Jan 2016 - May 2016</h6>
+                        <div class="w3-third">
+                            <div class="w3-container">
+                                <div class="w3-btn w3-display-container w3-white w3-border" style="width:110%; padding:0px 0px" onclick="window.open('https://github.com/FunnyKirin/onlineStockTradingSystem')"> <img src="images/netrade.png" class="w3-hover-opacity" alt="Timberwolf Life" style="width:100%">
+                                    <div class=" w3-display-topright">
+                                        <div class="fa fa-github w3-teal w3-padding-small" style="font-size:30px; color:white"></div>
+                                    </div>
+                                </div>
+                                <br> </div>
+                        </div>
+                        <div class="w3-twothird">
+                            <ul>
+                                <li>A relational database system to support the operations of an on-line stock trading system.</li>
+                                <li>Developed by MySQL, JDBC, JSP, JavaScript, HTML and Apache Tomcat.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-card-2 w3-margin-bottom w3-padding">
+                        <h5 class="w3-opacity w3-margin-left"><b>Alien VS. Cop</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right w3-margin-left"></i>Jan 2015 - May 2015</h6>
+                        <div class="w3-quarter">
+                            <div class="w3-container">
+                                <div class="w3-btn w3-display-container w3-white w3-border" style="width:100%; padding:0px 0px" onclick="window.open('https://www.youtube.com/watch?v=ohO0xzsiK-k')"> <img src="images/AlienVsCopLogo.png" class="w3-hover-opacity" alt="Timberwolf Life" style="width:100%">
+                                    <div class=" w3-display-topright">
+                                        <div class="fa fa-youtube-play w3-teal w3-padding-small" style="font-size:30px; color:white"></div>
+                                    </div>
+                                </div>
+                                <br> </div>
+                        </div>
+                        <div class="w3-threequarter">
+                            <ul>
+                                <li>A 2D top down shooting game about combat between a policeman and aliens.</li>
+                                <li>Written in C++, using Lua plus script and Box2D physics engine.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

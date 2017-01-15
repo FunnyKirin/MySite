@@ -1,7 +1,37 @@
-.hr{
+.hr {
     border: none;
     height: 1px;
-    color: #adadad; /* old IE */
-    background-color: #d8d8d8; /* Modern Browsers */
+    color: #adadad;
+    /* old IE */
+    background-color: #d8d8d8;
+    /* Modern Browsers */
+}
 
+.textButton {
+    background: none;
+    border: none;
+}
+
+.navbar {
+    border: 0px;
+    position: fixed;
+    top: 60px;
+    right: 5%;
+    width: 110px;
+    height: 350px;
+    text-align: center;
+}
+
+.navFont {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+
+.navActive {
+    background-color: teal;
+}
+
+.ImageBorder
+{
+    border-width: 15px;
+    border-color: Black;
 }
